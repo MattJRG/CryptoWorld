@@ -1,1 +1,144 @@
-hello world
+﻿<!DOCTYPE html>
+<html>
+<title>CryptoWorldUK</title>
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+			
+			<link href="css/main.css" rel="stylesheet" type="text/css" />﻿
+	</head>
+
+	<body>
+		<header id="pageHeader">
+			<h1>Crypto Shop UK</h1>
+		</header>
+  		<article id="mainArticle">
+  			<div class="item-container">
+	  			<div class="coin-profile">
+				<h3>Bitcoin (BTC)</h3>
+				<p>Price: £2300</p>
+				<img class="crypto-logo" src="assets/BTC-Logo.png">
+				<button class="buy-button">Buy now</button>
+				</div>
+			</div>
+
+			<div class="item-container">
+				<h3>Ethereum (ETH)</h3>
+				<p>Price: £176</p>
+				<img class="crypto-logo" src="assets/ETH-Logo.png">
+				<button class="buy-button">Buy now</button>
+			</div>
+
+			<div class="item-container">
+				<h3>Litecoin (LTC)</h3>
+				<p>Price: £35.2</p>
+				<img class="crypto-logo" src="assets/LTC-Logo.png">
+				<button class="buy-button">Buy now</button>
+			</div>
+
+			<div class="item-container">
+				<h3>Stratis (STRAT)</h3>
+				<p>Price: £4.85</p>
+				<img class="crypto-logo" src="assets/STRAT-Logo.png">
+				<button class="buy-button">Buy now</button>
+			</div>
+
+			<div class="item-container">
+				<h3>Ripple (XRP)</h3>
+				<p>Price: £30</p>
+				<img class="crypto-logo" src="assets/XRP-Logo.png">
+				<button class="buy-button">Buy now</button>
+			</div>
+
+			<div class="item-container">
+				<h3>Waves (WAVES)</h3>
+				<p>Price: £30</p>
+				<img class="crypto-logo" src="assets/WAVES-Logo.png">
+				<button class="buy-button">Buy now</button>
+			</div>
+
+  		</article>
+ 		<nav id="mainNav">
+			<div class="nav-bar">
+				<button id="HowBtn" class="nav-btn">How it works</button>
+			</div>
+			<div class="nav-bar">
+				<button id="FAQBtn" class="nav-btn">FAQ</button>
+			</div>
+			<div class="nav-bar">
+				<button id="AbtUsBtn" class="nav-btn">About Us</button>
+			</div>
+			|
+			<div class="nav-bar">
+				<button id="signInBtn" class="nav-btn">Sign In</button>
+			</div>
+			<div class="nav-bar">
+				<button id="signUpBtn" class="nav-btn">Sign Up</button>
+			</div>
+ 		</nav>
+
+		<div id="signUpModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="closeSUp">&times;</span>
+		    <form class="modal-content animate" action="/action_page.php">
+			    <div class="container">
+			      <label><b>Firstname</b></label>
+			      <input type="text" placeholder="Enter Firstname" name="fname" required>
+			      <label><b>Surname</b></label>
+			      <input type="text" placeholder="Enter Surname" name="sname" required>
+			      <label><b>Email Address</b></label>
+			      <input type="text" placeholder="Enter Email Address" name="emailadd" required>
+			      <label><b>Username</b></label>
+			      <input type="text" placeholder="Enter Username" name="uname" required>
+			      <label><b>Password</b></label>
+			      <input type="password" placeholder="Enter Password" name="psw" required>
+			      <label><b>Re-enter Password</b></label>
+			      <input type="password" placeholder="Re-Password" name="psw" required>
+			      <button type="submit">Sign Up</button>
+			      <input type="checkbox" checked="checked"> Remember me
+			    </div>
+
+			    <div class="container" style="background-color:#f1f1f1">
+			      <button type="button" onclick="document.getElementById('signInModal').style.display='none'" class="cancelbtn">Cancel</button>
+			      <span class="psw">Forgot <a href="#">password?</a></span>
+			    </div>
+		  </form>
+		  </div>
+
+		</div>
+
+		<div id="signInModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="closeSIn">&times;</span>
+		    <form class="modal-content animate" action="/action_page.php">
+			    <div class="container">
+			      <label><b>Username</b></label>
+			      <input type="text" placeholder="Enter Username" name="uname" required>
+
+			      <label><b>Password</b></label>
+			      <input type="password" placeholder="Enter Password" name="psw" required>
+
+			      <button type="submit">Login</button>
+			      <input type="checkbox" checked="checked"> Remember me
+			    </div>
+
+			    <div class="container" style="background-color:#f1f1f1">
+			      <button type="button" onclick="document.getElementById('signUpModal').style.display='none'" class="cancelbtn">Cancel</button>
+			      <span class="psw">Forgot <a href="#">password?</a></span>
+			    </div>
+		  </form>
+		  </div>
+
+		</div>
+
+  		<footer id="pageFooter">Footer</footer>
+		<script src='main.js'></script>
+	</body>
+
+</html>
